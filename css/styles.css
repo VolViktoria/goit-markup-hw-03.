@@ -11,16 +11,13 @@
 
 /* body html*/
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--main-text-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
 }
 
 .list {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -32,29 +29,28 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*container*/
 
 .container {
   width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*header*/
-
-.page-header {
-  background-color: var(--main-text-color);
-}
 
 /* logo  */
 
 .logo {
   color: var(--specific-text-color);
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -156,7 +152,7 @@ ul {
   color: var(--main-text-color);
 }
 .button {
-  cuorsor: pointer;
+  cursor: pointer;
 }
 
 /*section features*/
@@ -164,6 +160,10 @@ ul {
 
 .section {
   padding: 94px 0;
+}
+
+.features {
+  padding-bottom: 0;
 }
 
 .features-description {
@@ -195,11 +195,6 @@ ul {
 .image-list {
   display: flex;
   justify-content: space-between;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /*title3*/
@@ -286,17 +281,11 @@ img {
 
 .filters-button {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .filters-button .filters-btn:not(:last-child) {
   margin-right: 8px;
-}
-
-.filters-btn {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .secondary-button {
@@ -318,6 +307,9 @@ img {
 .secondary-button:focus {
   color: var(--main-text-color);
   background-color: var(--aditional-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /*   projects    */
@@ -330,8 +322,6 @@ img {
 .project-item {
   background-color: var(--main-text-color);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project-item:not(:nth-child(3n)) {
@@ -358,8 +348,8 @@ img {
 .project-text {
   text-align: center;
   padding: 24px 20px;
-  border-top: none;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 /*extra styles*/
 
