@@ -7,6 +7,7 @@
   --specific-text-color: #000000;
   --secondary-background-color: #2f303a;
   --background-extra-color: #f5f4fa;
+  --extra-text-color: #eeeeee;
 }
 
 /* body html*/
@@ -300,6 +301,7 @@ img {
   border-color: transparent;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 
 .secondary-button:active,
@@ -348,7 +350,7 @@ img {
 .project-text {
   text-align: center;
   padding: 24px 20px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--extra-text-color);
   border-top: none;
 }
 /*extra styles*/
